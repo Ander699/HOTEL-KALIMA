@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Rincón del Carmen | Hotel de Lujo</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+
+  <header id="main-header"></header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">✦ Girón, Santander — Colombia</span>
+      <h1 class="hero-title">
+        Descubre el Confort<br>en <em>El Rincón<br>del Carmen</em>
+      </h1>
+      <p class="hero-sub">
+        Naturaleza, lujo y descanso en un solo lugar. Una experiencia que trasciende el hospedaje.
+      </p>
+      <div class="hero-actions">
+        <a href="#rooms" class="btn-main">Reservar Ahora</a>
+        <a href="contacto.html" class="btn-ghost">Contáctanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRUSEL DE GALERÍA -->
+  <section class="carousel-section">
+    <h2 class="section-title display">Galería del Hotel</h2>
+    <p class="section-subtitle">Descubre cada rincón de nuestra experiencia.</p>
+    <div class="section-line"></div>
+    <div class="carousel-wrap">
+      <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8592;</button>
+      <div class="carousel-track-wrap">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1615460549969-36fa19521a4f?w=900&q=80" alt="Lobby del hotel">
+            <p class="carousel-caption">Lobby principal</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" alt="Suite Presidencial">
+            <p class="carousel-caption">Suite Presidencial</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&q=80" alt="Piscina">
+            <p class="carousel-caption">Piscina temperada</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=900&q=80" alt="Restaurante">
+            <p class="carousel-caption">Restaurante Gourmet</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&q=80" alt="Spa">
+            <p class="carousel-caption">Spa & Bienestar</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=900&q=80" alt="Zonas húmedas">
+            <p class="carousel-caption">Zonas húmedas</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8594;</button>
+    </div>
+    <div class="carousel-dots" id="carousel-dots"></div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <div class="services-strip">
+    <div class="inner">
+      <h2 class="section-title display">Nuestras Instalaciones</h2>
+      <div class="section-line"></div>
+      <div class="services-grid">
+        <div class="service-item fade-in-up" style="animation-delay:.1s">
+          <span class="service-icon">🌿</span>
+          <h3>Spa & Relajación</h3>
+          <p>Tratamientos exclusivos en un ambiente de serenidad total.</p>
+        </div>
+        <div class="service-item fade-in-up" style="animation-delay:.2s">
+          <span class="service-icon">🍽️</span>
+          <h3>Restaurante Gourmet</h3>
+          <p>Cocina de autor con ingredientes locales y sabores del mundo.</p>
+        </div>
+        <div class="service-item fade-in-up" style="animation-delay:.3s">
+          <span class="service-icon">💧</span>
+          <h3>Zonas Húmedas</h3>
+          <p>Piscina temperada, sauna finlandesa y jacuzzi exterior.</p>
+        </div>
+        <div class="service-item fade-in-up" style="animation-delay:.4s">
+          <span class="service-icon">🏋️</span>
+          <h3>Centro Fitness</h3>
+          <p>Equipamiento de última generación disponible las 24 horas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HABITACIONES + BÚSQUEDA DE DISPONIBILIDAD -->
+  <section id="rooms" class="rooms-section">
+    <h2 class="section-title display">Consulta Disponibilidad</h2>
+    <p class="section-subtitle">Encuentra la habitación perfecta para tu estadía.</p>
+    <div class="section-line"></div>
+    <div id="rooms-container" class="rooms-grid"></div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">✦ El Rincón del Carmen</div>
+      <nav class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html">Acceso</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Hotel El Rincón del Carmen &mdash; Girón, Santander</p>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
