@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — El Rincón del Carmen</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+
+  <header id="main-header"></header>
+
+  <main>
+    <section class="contact-section">
+
+      <div class="contact-info fade-in-up">
+        <p class="auth-eyebrow">✦ Estamos aquí</p>
+        <h1 class="display" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;margin-bottom:.5rem;">
+          Ponte en<br><em style="color:var(--gold);font-style:italic;">Contacto</em>
+        </h1>
+        <div class="section-line"></div>
+        <p>¿Tienes alguna duda sobre nuestras habitaciones o tu reserva? Estamos aquí para ayudarte las 24 horas.</p>
+
+        <div class="info-item">
+          <span>📍 Dirección</span>
+          <p>Cl. 30 #15-80, Girón, Santander, Colombia</p>
+        </div>
+        <div class="info-item">
+          <span>📞 Teléfono</span>
+          <p><a href="tel:+573001234567" style="color:inherit">+57 300 123 4567</a></p>
+        </div>
+        <div class="info-item">
+          <span>✉️ Email</span>
+          <p><a href="mailto:soporte@rincondelcarmen.com.co" style="color:inherit">soporte@rincondelcarmen.com.co</a></p>
+        </div>
+        <div class="info-item">
+          <span>🕐 Horario</span>
+          <p>Lunes a Domingo · 7:00am – 10:00pm</p>
+        </div>
+        <div class="info-item">
+          <span>📱 WhatsApp</span>
+          <p><a href="https://wa.me/573001234567" target="_blank" style="color:var(--gold)">Chatea con nosotros</a></p>
+        </div>
+
+        <!-- Mapa de Girón, Santander -->
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31703.28!2d-73.1714!3d7.0735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683e4b14e7eeab%3A0xb3abab80bc0a66f7!2sGir%C3%B3n%2C%20Santander!5e0!3m2!1ses!2sco!4v1715000000000"
+            width="100%" height="280" style="border:0;border-radius:12px;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap fade-in-up" style="animation-delay:.15s">
+        <form id="contact-form" class="auth-form">
+          <div class="input-group">
+            <label for="contact-name">Nombre completo</label>
+            <input type="text" id="contact-name" placeholder="Ej: Juan Pérez" required>
+          </div>
+          <div class="input-group">
+            <label for="contact-email">Correo electrónico</label>
+            <input type="email" id="contact-email" placeholder="juan@correo.com" required>
+          </div>
+          <div class="input-group">
+            <label for="contact-phone">Teléfono (opcional)</label>
+            <input type="tel" id="contact-phone" placeholder="+57 300 000 0000">
+          </div>
+          <div class="input-group">
+            <label for="contact-subject">Asunto</label>
+            <select id="contact-subject">
+              <option value="consulta">Consulta General</option>
+              <option value="reserva">Problema con Reserva</option>
+              <option value="pago">Duda sobre Pagos</option>
+              <option value="grupos">Reservas de Grupos</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="contact-message">Mensaje</label>
+            <textarea id="contact-message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-gold">Enviar Mensaje</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">✦ El Rincón del Carmen</div>
+      <nav class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="reservas.html">Reservas</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Hotel El Rincón del Carmen</p>
+    </div>
+  </footer>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
