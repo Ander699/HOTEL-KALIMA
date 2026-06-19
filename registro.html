@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Cuenta — El Rincón del Carmen</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+
+  <header id="main-header"></header>
+
+  <main class="auth-page">
+    <div class="auth-box auth-box-wide">
+      <p class="auth-eyebrow">✦ Únete a nosotros</p>
+      <h1 class="auth-title display">Crear Cuenta</h1>
+      <p class="auth-sub">Crea tu cuenta y empieza a vivir la experiencia El Rincón del Carmen.</p>
+
+      <form id="register-form" class="auth-form">
+
+        <div class="form-row">
+          <div class="input-group">
+            <label for="reg-id">Número de identificación</label>
+            <input type="text" id="reg-id" placeholder="Ej: 1098765432" required>
+          </div>
+          <div class="input-group">
+            <label for="reg-name">Nombre completo</label>
+            <input type="text" id="reg-name" placeholder="Ej: Juan Pérez" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-group">
+            <label for="reg-nationality">Nacionalidad</label>
+            <select id="reg-nationality" required>
+              <option value="">Selecciona...</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Perú">Perú</option>
+              <option value="México">México</option>
+              <option value="Argentina">Argentina</option>
+              <option value="España">España</option>
+              <option value="Estados Unidos">Estados Unidos</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="reg-phone">Teléfono</label>
+            <input type="tel" id="reg-phone" placeholder="Ej: +57 300 123 4567" required>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="reg-email">Correo electrónico</label>
+          <input type="email" id="reg-email" placeholder="tu@correo.com" required>
+        </div>
+
+        <div class="form-row">
+          <div class="input-group">
+            <label for="reg-password">Contraseña</label>
+            <input type="password" id="reg-password" placeholder="Mínimo 6 caracteres" required>
+          </div>
+          <div class="input-group">
+            <label for="reg-confirm">Confirmar contraseña</label>
+            <input type="password" id="reg-confirm" placeholder="Repite tu contraseña" required>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-gold">Crear Cuenta</button>
+        </div>
+      </form>
+
+      <div class="auth-footer">
+        <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
